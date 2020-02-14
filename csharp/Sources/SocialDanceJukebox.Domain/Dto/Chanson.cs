@@ -6,6 +6,11 @@
     public class Chanson
     {
         /// <summary>
+        /// ID de la chanson.
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// Titre de la chanson.
         /// </summary>
         public string Titre { get; set; }
@@ -34,5 +39,10 @@
         /// Genre de la chanson.
         /// </summary>
         public string Frequence { get; set; }
+
+        /// <summary>
+        /// Ordre de la chanson.
+        /// </summary>
+        public int Ordre { get; set; }
     }
 }

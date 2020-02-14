@@ -1,4 +1,5 @@
-﻿using SocialDanceJukebox.Domain.Dto;
+﻿using SocialDanceJukebox.Domain.Calculs.Contracts;
+using SocialDanceJukebox.Domain.Dto;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -32,6 +33,17 @@ namespace SocialDanceJukebox.Domain.Calculs
             _normalisateur.Normalise(data);
 
             Print(data);
+
+            /* Trie */
+            new TrieurSimilarite().Tri(data);
+
+            Print(data);
+
+            /* Calcule le score. */
+            IDistance distance = new DistanceEuclidienne();
+            var score = new ScoreCalculeur().Calcule(data, distance);
+            Console.WriteLine();
+            Console.WriteLine($"Score : {100*score:##}%");
         }
 
         private void Print(CalculData data)
@@ -44,3 +56,4 @@ namespace SocialDanceJukebox.Domain.Calculs
         }
     }
 }
+

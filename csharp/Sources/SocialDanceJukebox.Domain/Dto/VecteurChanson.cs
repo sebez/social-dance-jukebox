@@ -34,5 +34,13 @@ namespace SocialDanceJukebox.Domain.Dto
         /// Chanson.
         /// </summary>
         public Chanson Chanson { get; set; }
+
+        public int Id
+        {
+            get
+            {
+                return this.Chanson.Id;
+            }
+        }
     }
 }

@@ -8,6 +8,14 @@ namespace SocialDanceJukebox.Domain.Calculs
 {
     public class VecteurNormalisateur
     {
+        private readonly Dictionary<int, decimal> _poidsMap = new Dictionary<int, decimal>
+        {
+            [VecteurChanson.TempoKey] = 2,
+            [VecteurChanson.GenreKey] = 1,
+            [VecteurChanson.TypeKey] = 1,
+            [VecteurChanson.FrequenceKey] = 1
+        };
+
         public void Normalise(CalculData data)
         {
             /* Parcourt les champs */
@@ -18,10 +26,10 @@ namespace SocialDanceJukebox.Domain.Calculs
                 var minValue = data.Vecteurs.Min(x => x[fieldIdx]);
                 var maxValue = data.Vecteurs.Max(x => x[fieldIdx]);
 
-                /* Normalise la coordonnée. */
-                foreach(var vecteur in data.Vecteurs)
+                /* Normalise la coordonnée, pondéré par le poids. */
+                foreach (var vecteur in data.Vecteurs)
                 {
-                    vecteur[fieldIdx] = (vecteur[fieldIdx] - minValue) / (maxValue - minValue);
+                    vecteur[fieldIdx] = _poidsMap[fieldIdx] * (vecteur[fieldIdx] - minValue) / (maxValue - minValue);
                 }
             }
         }

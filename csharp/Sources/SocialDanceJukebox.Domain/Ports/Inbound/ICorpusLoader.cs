@@ -12,5 +12,11 @@ namespace SocialDanceJukebox.Domain.Ports.Inbound
         /// </summary>
         /// <returns></returns>
         Playlist LoadPlaylist();
+
+        /// <summary>
+        /// Enregistre la playlist ordonné.
+        /// </summary>
+        /// <param name="playlist"></param>
+        void SavePlayList(Playlist playlist);
     }
 }
