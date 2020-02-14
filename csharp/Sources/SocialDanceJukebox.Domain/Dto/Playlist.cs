@@ -13,5 +13,10 @@ namespace SocialDanceJukebox.Domain.Dto
         /// Liste des chansons.
         /// </summary>
         public ICollection<Chanson> Chansons { get; } = new List<Chanson>();
+
+        /// <summary>
+        /// Liste des vecteurs.
+        /// </summary>
+        public ICollection<VecteurChanson> Vecteurs { get; } = new List<VecteurChanson>();
     }
 }
