@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialDanceJukebox.Infrastr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Domain", "01 Domain", "{BAAA70E9-F609-48E4-AB60-0160DB706E20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialDanceJukebox.Infrastructure.Test", "..\..\Tests\SocialDanceJukebox.Infrastructure.Test\SocialDanceJukebox.Infrastructure.Test.csproj", "{38382FE6-E464-4FF7-B957-7009749385CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38382FE6-E464-4FF7-B957-7009749385CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38382FE6-E464-4FF7-B957-7009749385CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38382FE6-E464-4FF7-B957-7009749385CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38382FE6-E464-4FF7-B957-7009749385CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF} = {9A8ED37C-9227-4838-8CE2-092F4A6DA74B}
 		{7AC6D223-23FD-4EA3-865E-A73607EBEA2C} = {BAAA70E9-F609-48E4-AB60-0160DB706E20}
 		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D} = {E1A40055-D5B2-48B9-BDEF-50EA5BAF48CB}
+		{38382FE6-E464-4FF7-B957-7009749385CE} = {E1A40055-D5B2-48B9-BDEF-50EA5BAF48CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F87BADFB-709D-4DEC-BFCF-D82325758A47}

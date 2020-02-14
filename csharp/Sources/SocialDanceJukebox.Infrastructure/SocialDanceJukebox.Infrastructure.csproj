@@ -8,4 +8,8 @@
     <ProjectReference Include="..\SocialDanceJukebox.Domain\SocialDanceJukebox.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.94.2" />
+  </ItemGroup>
+
 </Project>

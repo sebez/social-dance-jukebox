@@ -14,6 +14,7 @@ namespace SocialDanceJukebox.Cli
             var printer = new Printer();
             var loader = new ExcelCorpusLoader(new ExcelCorpusLoaderConfig
             {
+                CheminFichier = @"C:\Data\ProjetsGit\social-dance-jukebox\csharp\Tests\SocialDanceJukebox.Infrastructure.Test\Resources\DataChansons.xlsx"
             });
 
             var playlist = loader.LoadPlaylist();
