@@ -1,10 +1,18 @@
 ﻿using System;
+using Microsoft.Extensions.Logging;
 using SocialDanceJukebox.Domain.Dto;
 
 namespace SocialDanceJukebox.Infrastructure.Adapters
 {
     public class Printer
     {
+        private readonly ILogger _logger;
+
+        public Printer(ILogger logger)
+        {
+            _logger = logger;
+        }
+
         public void Print(Chanson chanson)
         {
             Console.WriteLine($" -  {chanson.Titre} ({chanson.Artiste}) | {chanson.Tempo}MPM | {chanson.Type} | {chanson.Genre} | {chanson.Frequence} ");

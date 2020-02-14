@@ -9,9 +9,13 @@ namespace SocialDanceJukebox.Cli
     {
         static void Main(string[] args)
         {
-            Config();
+            var loggerfactory = Config();
+            var logger = loggerfactory.CreateLogger<Program>();
 
-            var printer = new Printer();
+
+            logger.LogInformation("*** Social Dance Jukebox ***");
+
+            var printer = new Printer(logger);
             var loader = new ExcelCorpusLoader(new ExcelCorpusLoaderConfig
             {
                 CheminFichier = @"C:\Data\ProjetsGit\social-dance-jukebox\csharp\Tests\SocialDanceJukebox.Infrastructure.Test\Resources\DataChansons.xlsx"
@@ -22,17 +26,13 @@ namespace SocialDanceJukebox.Cli
             printer.Print(playlist);
         }
 
-        private static void Config()
+        private static ILoggerFactory Config()
         {
-            // TODO fix
             IConfiguration config = new ConfigurationBuilder()
               .AddJsonFile("appsettings.json", true, true)
               .Build();
-
-
             Console.WriteLine("Social Dance Jukebox CLI");
 
-            // TODO fix
             var loggerFactory = LoggerFactory.Create(builder =>
             {
                 builder
@@ -41,8 +41,8 @@ namespace SocialDanceJukebox.Cli
                     .AddFilter("SocialDanceJukebox.Cli.Program", LogLevel.Debug)
                     .AddConsole();
             });
-            ILogger logger = loggerFactory.CreateLogger<Program>();
-            logger.LogInformation("Example log message");
+
+            return loggerFactory;
         }
     }
 }
