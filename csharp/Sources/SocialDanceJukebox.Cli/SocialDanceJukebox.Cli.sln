@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialDanceJukebox.Cli", "SocialDanceJukebox.Cli.csproj", "{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 App", "03 App", "{9A8ED37C-9227-4838-8CE2-092F4A6DA74B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Infrastructure", "02 Infrastructure", "{E1A40055-D5B2-48B9-BDEF-50EA5BAF48CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialDanceJukebox.Domain", "..\SocialDanceJukebox.Domain\SocialDanceJukebox.Domain.csproj", "{7AC6D223-23FD-4EA3-865E-A73607EBEA2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialDanceJukebox.Infrastructure", "..\SocialDanceJukebox.Infrastructure\SocialDanceJukebox.Infrastructure.csproj", "{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Domain", "01 Domain", "{BAAA70E9-F609-48E4-AB60-0160DB706E20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC6D223-23FD-4EA3-865E-A73607EBEA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC6D223-23FD-4EA3-865E-A73607EBEA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC6D223-23FD-4EA3-865E-A73607EBEA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC6D223-23FD-4EA3-865E-A73607EBEA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58D7FDBD-EAAC-499B-B8EF-07F675DA2ACF} = {9A8ED37C-9227-4838-8CE2-092F4A6DA74B}
+		{7AC6D223-23FD-4EA3-865E-A73607EBEA2C} = {BAAA70E9-F609-48E4-AB60-0160DB706E20}
+		{E4094D77-0279-4EF0-A91E-EA3A9D06EA6D} = {E1A40055-D5B2-48B9-BDEF-50EA5BAF48CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F87BADFB-709D-4DEC-BFCF-D82325758A47}
+	EndGlobalSection
+EndGlobal
