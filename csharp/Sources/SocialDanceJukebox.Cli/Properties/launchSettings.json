@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SocialDanceJukebox.Cli": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\Projets\\Github\\social-dance-jukebox\\csharp"
+    }
+  }
+}

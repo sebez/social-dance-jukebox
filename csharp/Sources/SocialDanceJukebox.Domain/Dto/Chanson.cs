@@ -31,11 +31,6 @@
         public string Type { get; set; }
 
         /// <summary>
-        /// Période de la chanson.
-        /// </summary>
-        public string Periode { get; set; }
-
-        /// <summary>
         /// Genre de la chanson.
         /// </summary>
         public string Frequence { get; set; }

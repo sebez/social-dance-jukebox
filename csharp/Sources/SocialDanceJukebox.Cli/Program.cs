@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using SocialDanceJukebox.Domain.Calculs;
 using SocialDanceJukebox.Infrastructure.Adapters;
 
 namespace SocialDanceJukebox.Cli
@@ -18,12 +19,15 @@ namespace SocialDanceJukebox.Cli
             var printer = new Printer(logger);
             var loader = new ExcelCorpusLoader(new ExcelCorpusLoaderConfig
             {
-                CheminFichier = @"C:\Data\ProjetsGit\social-dance-jukebox\csharp\Tests\SocialDanceJukebox.Infrastructure.Test\Resources\DataChansons.xlsx"
+                CheminFichier = @".\Tests\SocialDanceJukebox.Infrastructure.Test\Resources\DataChansons.xlsx"
             });
 
             var playlist = loader.LoadPlaylist();
-
+            
             printer.Print(playlist);
+
+            var jukebox = new Jukebox();
+            jukebox.AutoDj(playlist);
         }
 
         private static ILoggerFactory Config()

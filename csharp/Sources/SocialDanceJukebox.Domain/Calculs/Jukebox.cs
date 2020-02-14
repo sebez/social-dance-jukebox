@@ -1,0 +1,46 @@
+﻿using SocialDanceJukebox.Domain.Dto;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace SocialDanceJukebox.Domain.Calculs
+{
+    public class Jukebox
+    {
+        private readonly ChansonConvertisseur _convertisseur = new ChansonConvertisseur();
+        private readonly VecteurNormalisateur _normalisateur = new VecteurNormalisateur();
+
+        public void AutoDj(Playlist playlist)
+        {
+            if(playlist == null)
+            {
+                throw new ArgumentNullException(nameof(playlist));
+            }
+
+            var data = new CalculData();
+            
+            /* Convertit les chansons en vecteurs. */
+            foreach(var chanson in playlist.Chansons)
+            {
+                var vecteur = _convertisseur.CalculVecteurChanson(chanson);
+                data.Vecteurs.Add(vecteur);
+            }
+
+            Print(data);
+
+            /* Normalise les vecteurs. */
+            _normalisateur.Normalise(data);
+
+            Print(data);
+        }
+
+        private void Print(CalculData data)
+        {
+            Console.WriteLine("*** Vecteurs ***");
+            foreach (var vecteur in data.Vecteurs)
+            {
+                Console.WriteLine($"[{string.Join(" ; ", vecteur.Values)}]");
+            }
+        }
+    }
+}
