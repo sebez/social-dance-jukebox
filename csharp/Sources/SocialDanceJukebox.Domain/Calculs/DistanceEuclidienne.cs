@@ -1,9 +1,7 @@
-﻿using SocialDanceJukebox.Domain.Calculs.Contracts;
-using SocialDanceJukebox.Domain.Dto;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
+using SocialDanceJukebox.Domain.Calculs.Contracts;
+using SocialDanceJukebox.Domain.Dto;
 
 namespace SocialDanceJukebox.Domain.Calculs
 {

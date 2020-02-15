@@ -28,7 +28,11 @@ namespace SocialDanceJukebox.Cli
             
             printer.Print(playlist);
 
-            var jukebox = new Jukebox(new PreparateurNormalisateur());
+            var distance = new DistanceEuclidienne();
+            var jukebox = new Jukebox(
+                new PreparateurSansEffet(), 
+                new TrieurSimilarite(distance),
+                new ScoreCalculeur(distance));
             jukebox.AutoDj(playlist);
 
             loader.SavePlayList(playlist);

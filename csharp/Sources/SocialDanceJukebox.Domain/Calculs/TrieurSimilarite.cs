@@ -8,6 +8,13 @@ namespace SocialDanceJukebox.Domain.Calculs
 {
     public class TrieurSimilarite : ITrieur
     {
+        private readonly IDistance _distance;
+
+        public TrieurSimilarite(IDistance distance)
+        {
+            _distance = distance;
+        }
+
         public void Tri(CalculData data)
         {
             var random = new Random(DateTime.Now.Millisecond);
@@ -17,7 +24,6 @@ namespace SocialDanceJukebox.Domain.Calculs
             var axeX = data.Vecteurs.ToList();
             var axeY = data.Vecteurs.ToList();
             var matriceSimilarite = new MatriceSimilarite();
-            var distance = new DistanceEuclidienne();
 
             for (int x = 1; x <= dim; x++)
             {
@@ -25,7 +31,7 @@ namespace SocialDanceJukebox.Domain.Calculs
                 {
                     var vectX = axeX[x - 1];
                     var vectY = axeY[y - 1];
-                    matriceSimilarite[vectX, vectY] = distance.Calcule(vectX, vectY);
+                    matriceSimilarite[vectX, vectY] = _distance.Calcule(vectX, vectY);
                 }
             }
 

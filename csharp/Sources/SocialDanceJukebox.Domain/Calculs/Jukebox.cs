@@ -8,10 +8,14 @@ namespace SocialDanceJukebox.Domain.Calculs
     {
         private readonly ChansonConvertisseur _convertisseur = new ChansonConvertisseur();
         private readonly IVecteurPreparateur _preparateur;
+        private readonly ITrieur _trieur;
+        private readonly IScoreCalculeur _scoreCalculeur;
 
-        public Jukebox(IVecteurPreparateur preparateur)
+        public Jukebox(IVecteurPreparateur preparateur, ITrieur trieur, IScoreCalculeur scoreCalculeur)
         {
             _preparateur = preparateur;
+            _trieur = trieur;
+            _scoreCalculeur = scoreCalculeur;
         }
 
         public void AutoDj(Playlist playlist)
@@ -38,13 +42,12 @@ namespace SocialDanceJukebox.Domain.Calculs
             Print(data);
 
             /* Trie */
-            new TrieurSimilarite().Tri(data);
+            _trieur.Tri(data);
 
             Print(data);
 
             /* Calcule le score. */
-            IDistance distance = new DistanceEuclidienne();
-            var score = new ScoreCalculeur().Calcule(data, distance);
+            var score = _scoreCalculeur.Calcule(data);
             Console.WriteLine();
             Console.WriteLine($"Score : {100*score:##}%");
         }
