@@ -28,7 +28,7 @@ namespace SocialDanceJukebox.Cli
             
             printer.Print(playlist);
 
-            var distance = new DistanceEuclidienne();
+            var distance = new DistanceBinaire();
             var jukebox = new Jukebox(
                 new PreparateurSansEffet(), 
                 new TrieurSimilarite(distance),

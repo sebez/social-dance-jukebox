@@ -36,7 +36,7 @@ namespace SocialDanceJukebox.Domain.Calculs
 
             Print(data);
 
-            /* Normalise les vecteurs. */
+            /* Prépare les vecteurs. */
             _preparateur.Prepare(data);
 
             Print(data);
