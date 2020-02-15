@@ -30,7 +30,8 @@ namespace SocialDanceJukebox.Cli
 
             var distance = new DistanceBinaire();
             var jukebox = new Jukebox(
-                new PreparateurSansEffet(), 
+                new PreparateurSansEffet(),
+                new MatriceSimilariteCalculateur(distance),
                 new TrieurSimilarite(distance),
                 new ScoreCalculeur(distance));
             jukebox.AutoDj(playlist);

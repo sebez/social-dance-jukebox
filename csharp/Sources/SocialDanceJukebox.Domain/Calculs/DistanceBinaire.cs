@@ -45,7 +45,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             }
         }
 
-        private decimal ComparaisonTempo(decimal v1, decimal v2)
+        private static decimal ComparaisonTempo(decimal v1, decimal v2)
         {
             return
                    Math.Abs(v1 - v2) > SeuilDeltaTempo ?
@@ -53,7 +53,7 @@ namespace SocialDanceJukebox.Domain.Calculs
                    0;
         }
 
-        private decimal ComparaisonDelta(decimal v1, decimal v2)
+        private static decimal ComparaisonDelta(decimal v1, decimal v2)
         {
             return
                    Math.Abs(v1 - v2) > 0.1m ?

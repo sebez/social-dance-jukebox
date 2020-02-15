@@ -17,24 +17,6 @@ namespace SocialDanceJukebox.Domain.Calculs
 
         public void Tri(CalculData data)
         {
-            var random = new Random(DateTime.Now.Millisecond);
-
-            /* Calcule la matrice des similarités. */
-            var dim = data.Vecteurs.Count;
-            var axeX = data.Vecteurs.ToList();
-            var axeY = data.Vecteurs.ToList();
-            var matriceSimilarite = new MatriceSimilarite();
-
-            for (int x = 1; x <= dim; x++)
-            {
-                for (int y = 1; y <= dim; y++)
-                {
-                    var vectX = axeX[x - 1];
-                    var vectY = axeY[y - 1];
-                    matriceSimilarite[vectX, vectY] = _distance.Calcule(vectX, vectY);
-                }
-            }
-
             var vecteursRestant = data.Vecteurs.ToList();
 
             /* Choisit le premier vecteur. */
@@ -45,10 +27,11 @@ namespace SocialDanceJukebox.Domain.Calculs
             var vecteurPrecedent = premierVecteur;
 
             /* Cherche l'ordre n itérativement. */
+            var dim = data.Vecteurs.Count;
             for (int n = 2; n <= dim; n++)
             {
                 /* Récupère les distances avec les vecteurs restants. */
-                var distanceMap = vecteursRestant.ToDictionary(v => v, v => matriceSimilarite[vecteurPrecedent, v]);
+                var distanceMap = vecteursRestant.ToDictionary(v => v, v => data.MatriceSimilarite[vecteurPrecedent, v]);
 
                 /* Trie par distance */
                 var vecteursRestantTries = distanceMap.OrderBy(t => t.Value).Select(t => t.Key).ToList();
@@ -62,6 +45,8 @@ namespace SocialDanceJukebox.Domain.Calculs
             }
 
         }
+
+        
 
         private VecteurChanson GetMedian(IList<VecteurChanson> vecteurs)
         {

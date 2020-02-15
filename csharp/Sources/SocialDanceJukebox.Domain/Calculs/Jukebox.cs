@@ -8,12 +8,14 @@ namespace SocialDanceJukebox.Domain.Calculs
     {
         private readonly ChansonConvertisseur _convertisseur = new ChansonConvertisseur();
         private readonly IVecteurPreparateur _preparateur;
+        private readonly MatriceSimilariteCalculateur _matriceSimilariteCalculateur;
         private readonly ITrieur _trieur;
         private readonly IScoreCalculeur _scoreCalculeur;
 
-        public Jukebox(IVecteurPreparateur preparateur, ITrieur trieur, IScoreCalculeur scoreCalculeur)
+        public Jukebox(IVecteurPreparateur preparateur, MatriceSimilariteCalculateur matriceSimilariteCalculateur, ITrieur trieur, IScoreCalculeur scoreCalculeur)
         {
             _preparateur = preparateur;
+            _matriceSimilariteCalculateur = matriceSimilariteCalculateur;
             _trieur = trieur;
             _scoreCalculeur = scoreCalculeur;
         }
@@ -41,6 +43,9 @@ namespace SocialDanceJukebox.Domain.Calculs
 
             Print(data);
 
+            /* Calcule la matrice de similarité. */
+            _matriceSimilariteCalculateur.CalculeMatriceSimilarite(data);
+
             /* Trie */
             _trieur.Tri(data);
 
@@ -52,7 +57,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             Console.WriteLine($"Score : {100*score:##}%");
         }
 
-        private void Print(CalculData data)
+        private static void Print(CalculData data)
         {
             Console.WriteLine("*** Vecteurs ***");
             foreach (var vecteur in data.Vecteurs)
