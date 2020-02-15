@@ -1,12 +1,11 @@
-﻿using SocialDanceJukebox.Domain.Dto;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using SocialDanceJukebox.Domain.Calculs.Contracts;
+using SocialDanceJukebox.Domain.Dto;
 
 namespace SocialDanceJukebox.Domain.Calculs
 {
-    public class VecteurNormalisateur
+    public class PreparateurNormalisateur : IVecteurPreparateur
     {
         private readonly Dictionary<int, decimal> _poidsMap = new Dictionary<int, decimal>
         {
@@ -16,7 +15,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             [VecteurChanson.FrequenceKey] = 1
         };
 
-        public void Normalise(CalculData data)
+        public void Prepare(CalculData data)
         {
             /* Parcourt les champs */
             var fieldIdxList = data.Vecteurs.First().Keys.ToList();

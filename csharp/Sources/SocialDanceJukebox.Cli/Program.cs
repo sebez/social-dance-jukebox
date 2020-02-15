@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using SocialDanceJukebox.Domain.Calculs;
@@ -30,7 +28,7 @@ namespace SocialDanceJukebox.Cli
             
             printer.Print(playlist);
 
-            var jukebox = new Jukebox();
+            var jukebox = new Jukebox(new PreparateurNormalisateur());
             jukebox.AutoDj(playlist);
 
             loader.SavePlayList(playlist);

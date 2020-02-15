@@ -1,15 +1,18 @@
-﻿using SocialDanceJukebox.Domain.Calculs.Contracts;
+﻿using System;
+using SocialDanceJukebox.Domain.Calculs.Contracts;
 using SocialDanceJukebox.Domain.Dto;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SocialDanceJukebox.Domain.Calculs
 {
     public class Jukebox
     {
         private readonly ChansonConvertisseur _convertisseur = new ChansonConvertisseur();
-        private readonly VecteurNormalisateur _normalisateur = new VecteurNormalisateur();
+        private readonly IVecteurPreparateur _preparateur;
+
+        public Jukebox(IVecteurPreparateur preparateur)
+        {
+            _preparateur = preparateur;
+        }
 
         public void AutoDj(Playlist playlist)
         {
@@ -30,7 +33,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             Print(data);
 
             /* Normalise les vecteurs. */
-            _normalisateur.Normalise(data);
+            _preparateur.Prepare(data);
 
             Print(data);
 
