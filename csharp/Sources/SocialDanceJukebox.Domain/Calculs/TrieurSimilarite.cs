@@ -9,10 +9,12 @@ namespace SocialDanceJukebox.Domain.Calculs
     public class TrieurSimilarite : ITrieur
     {
         private readonly IDistance _distance;
+        private readonly IProchainVecteurSelecteur _prochainVecteurSelecteur;
 
-        public TrieurSimilarite(IDistance distance)
+        public TrieurSimilarite(IDistance distance, IProchainVecteurSelecteur prochainVecteurSelecteur)
         {
             _distance = distance;
+            _prochainVecteurSelecteur = prochainVecteurSelecteur;
         }
 
         public void Tri(CalculData data)
@@ -20,7 +22,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             var vecteursRestant = data.Vecteurs.ToList();
 
             /* Choisit le premier vecteur. */
-            var premierVecteur = data.Vecteurs.First();
+            var premierVecteur = ChoisitPremierVecteur(data);
             premierVecteur.Ordre = 1;
             vecteursRestant.Remove(premierVecteur);
 
@@ -30,47 +32,17 @@ namespace SocialDanceJukebox.Domain.Calculs
             var dim = data.Vecteurs.Count;
             for (int n = 2; n <= dim; n++)
             {
-                /* Récupère les distances avec les vecteurs restants. */
-                var distanceMap = vecteursRestant.ToDictionary(v => v, v => data.MatriceSimilarite[vecteurPrecedent, v]);
-
-                /* Trie par distance */
-                var vecteursRestantTries = distanceMap.OrderBy(t => t.Value).Select(t => t.Key).ToList();
-
-                /* Choisie le prochain vecteur comme étant le médian. */
-                var prochainVecteur = GetMedian(vecteursRestantTries);
+                var prochainVecteur = _prochainVecteurSelecteur.Selectionne(vecteurPrecedent, vecteursRestant, data);
 
                 /* Ajoute le prochain vecteur. */
                 prochainVecteur.Ordre = n;
                 vecteursRestant.Remove(prochainVecteur);
             }
-
         }
 
-        
-
-        private VecteurChanson GetMedian(IList<VecteurChanson> vecteurs)
+        private static VecteurChanson ChoisitPremierVecteur(CalculData data)
         {
-            int count = vecteurs.Count;
-            switch (count)
-            {
-                case 0:
-                    throw new NotSupportedException("Liste vide.");
-                case 1:
-                    return vecteurs.Single();
-                default:
-                    if (count % 2 == 0)
-                    {
-                        /* Cas d'un nombre pair */
-                        return vecteurs[(count / 2) - 1];
-                    }
-                    else
-                    {
-                        /* Cas d'un nombre impair */
-                        return vecteurs[(count - 1) / 2];
-                    }
-            }
+            return data.Vecteurs.First();
         }
     }
-
-
 }
