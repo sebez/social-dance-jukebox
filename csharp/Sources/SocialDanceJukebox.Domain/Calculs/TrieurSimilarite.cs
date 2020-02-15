@@ -39,7 +39,7 @@ namespace SocialDanceJukebox.Domain.Calculs
 
             /* Choisit le premier vecteur. */
             var premierVecteur = data.Vecteurs.First();
-            premierVecteur.Chanson.Ordre = 1;
+            premierVecteur.Ordre = 1;
             vecteursRestant.Remove(premierVecteur);
 
             var vecteurPrecedent = premierVecteur;
@@ -57,7 +57,7 @@ namespace SocialDanceJukebox.Domain.Calculs
                 var prochainVecteur = GetMedian(vecteursRestantTries);
 
                 /* Ajoute le prochain vecteur. */
-                prochainVecteur.Chanson.Ordre = n;
+                prochainVecteur.Ordre = n;
                 vecteursRestant.Remove(prochainVecteur);
             }
 

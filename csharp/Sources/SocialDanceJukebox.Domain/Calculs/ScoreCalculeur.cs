@@ -23,7 +23,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             int nbTransitions = data.Vecteurs.Count - 1;
 
             decimal buffer = 0;
-            var vecteursOrdonne = data.Vecteurs.OrderBy(v => v.Chanson.Ordre).ToList();
+            var vecteursOrdonne = data.Vecteurs.OrderBy(v => v.Ordre).ToList();
 
             /* Parcourt les vecteurs ordonnés du 1er à l'avant dernier. */
             for (int rowIdx = 0; rowIdx < nbTransitions; rowIdx++)

@@ -11,7 +11,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             var random = new Random(DateTime.Now.Millisecond);
             foreach (var vecteur in data.Vecteurs)
             {
-                vecteur.Chanson.Ordre = random.Next(1, 40);
+                vecteur.Ordre = random.Next(1, 40);
             }
         }
     }

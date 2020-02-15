@@ -42,5 +42,17 @@ namespace SocialDanceJukebox.Domain.Dto
                 return this.Chanson.Id;
             }
         }
+
+        public int Ordre
+        {
+            get
+            {
+                return this.Chanson.Ordre;
+            }
+            set
+            {
+                this.Chanson.Ordre = value;
+            }
+        }
     }
 }
