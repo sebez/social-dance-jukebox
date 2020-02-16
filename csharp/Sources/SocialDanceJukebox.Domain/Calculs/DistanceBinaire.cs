@@ -17,7 +17,6 @@ namespace SocialDanceJukebox.Domain.Calculs
         {
             decimal buffer = 0;
 
-
             /* Parcourt les champs */
             var fieldIdxList = a.Keys.ToList();
             foreach (int fieldIdx in fieldIdxList)
@@ -25,11 +24,6 @@ namespace SocialDanceJukebox.Domain.Calculs
                 /* Ajoute la distance : 0 ou 1. */
                 buffer += CalculeDistance(fieldIdx, a[fieldIdx], b[fieldIdx]);
             }
-
-            var distanceMax = fieldIdxList.Count;
-
-            /* Normalise la distance en divisant par le nombre de composantes. */
-            buffer = buffer / distanceMax;
 
             return buffer;
         }

@@ -2,6 +2,7 @@
   "profiles": {
     "SocialDanceJukebox.Cli": {
       "commandName": "Project",
+      "commandLineArgs": "> Log.txt",
       "workingDirectory": "D:\\Projets\\Github\\social-dance-jukebox\\csharp"
     }
   }

@@ -32,7 +32,10 @@ namespace SocialDanceJukebox.Domain.Calculs
             var dim = data.Vecteurs.Count;
             for (int n = 2; n <= dim; n++)
             {
+                Console.WriteLine();
+                Console.WriteLine($"Choix du vecteur {n}");
                 var prochainVecteur = _prochainVecteurSelecteur.Selectionne(vecteurPrecedent, vecteursRestant, data);
+                Console.WriteLine($"Distance vecteur suivant {data.MatriceSimilarite[vecteurPrecedent, prochainVecteur]}");
 
                 /* Ajoute le prochain vecteur. */
                 prochainVecteur.Ordre = n;

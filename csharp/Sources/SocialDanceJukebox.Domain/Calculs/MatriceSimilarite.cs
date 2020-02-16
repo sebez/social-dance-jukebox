@@ -1,7 +1,6 @@
-﻿using SocialDanceJukebox.Domain.Dto;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using SocialDanceJukebox.Domain.Dto;
 
 namespace SocialDanceJukebox.Domain.Calculs
 {

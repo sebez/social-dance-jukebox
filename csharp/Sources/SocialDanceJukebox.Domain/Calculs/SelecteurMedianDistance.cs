@@ -18,8 +18,7 @@ namespace SocialDanceJukebox.Domain.Calculs
             var vecteursRestantTries = distanceMap.OrderBy(t => t.Value).Select(t => t.Key).ToList();
 
             /* Choisie le prochain vecteur comme étant le médian. */
-            var prochainVecteur = GetMedian(vecteursRestantTries);
-            return prochainVecteur;
+            return GetMedian(vecteursRestantTries);
         }
 
         private VecteurChanson GetMedian(IList<VecteurChanson> vecteurs)

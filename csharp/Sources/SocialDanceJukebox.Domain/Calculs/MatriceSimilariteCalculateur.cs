@@ -6,7 +6,6 @@ namespace SocialDanceJukebox.Domain.Calculs
 {
     public class MatriceSimilariteCalculateur
     {
-
         private readonly IDistance _distance;
 
         public MatriceSimilariteCalculateur(IDistance distance)
@@ -16,14 +15,14 @@ namespace SocialDanceJukebox.Domain.Calculs
 
         public void CalculeMatriceSimilarite(CalculData data)
         {
-            var dim2 = data.Vecteurs.Count;
+            var dim = data.Vecteurs.Count;
             var axeX = data.Vecteurs.ToList();
             var axeY = data.Vecteurs.ToList();
             var matriceSimilarite = new MatriceSimilarite();
 
-            for (int x = 1; x <= dim2; x++)
+            for (int x = 1; x <= dim; x++)
             {
-                for (int y = 1; y <= dim2; y++)
+                for (int y = 1; y <= dim; y++)
                 {
                     var vectX = axeX[x - 1];
                     var vectY = axeY[y - 1];
