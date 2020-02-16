@@ -1,0 +1,384 @@
+Social Dance Jukebox CLI
+info: SocialDanceJukebox.Cli.Program[0]
+      *** Social Dance Jukebox ***
+*** Playlist  ****
+40 chansons dans la playlist
+ -  The Show (Lenka) | 31MPM | Rock | Modern | Rare 
+ -  Bad Things (Jace Everett) | 32MPM | Rock | Modern | Standard 
+ -  Milk And Water (Amos Milburn) | 32MPM | Swing | Oldie | Standard 
+ -  I'm just a gigolo (Louis Prima) | 32MPM | Swing | Oldie | Rare 
+ -  Thank you Very much (Margaret) | 33MPM | Rock | Modern | Standard 
+ -  Be My Baby (Bea Miller) | 33MPM | Rock | Oldie | Standard 
+ -  €a ira (Joyce Jonathan) | 34MPM | Fran‡ais | Modern | Standard 
+ -  Hold Me Tight (Evan Rachel Wood) | 34MPM | Rock | Oldie Cover | Rare 
+ -  Baby Workout (Jackie Wilson) | 35MPM | Rock | Oldie | Rare 
+ -  Beyond The Sea (Jeff Lynne) | 35MPM | Rock | Oldie Cover | Rare 
+ -  Come What May (Etta James) | 36MPM | Rock | Oldie | Standard 
+ -  It's a beautiful Day (Michel Bubl‚) | 36MPM | Rock | Oldie Cover | Rare 
+ -  Shake, Rattle And Roll (Date) | 36MPM | Rock | Oldie Cover | Standard 
+ -  Hot n Cold (The baseballs) | 38MPM | Rock | Modern Cover | Standard 
+ -  Feel It Still - Portugal The Man (Postmodern Jukebox) | 38MPM | Swing | Modern Cover | Standard 
+ -  Love Me or Leave Me (The Jive Aces) | 38MPM | Swing | Oldie Cover | Rare 
+ -  Don't Stop Me Now  (Queen ) | 40MPM | Rock | 80s | Standard 
+ -  Dear Future Husband (Meghan Trainor) | 40MPM | Rock | Modern | Standard 
+ -  What I Like About You (The Romantics) | 40MPM | Rock | Oldie | Rare 
+ -  These Boots are made for walkin (Haley Reinhart) | 40MPM | Rock | Oldie Cover | Rare 
+ -  Rockin Robin (The Overtones) | 41MPM | Rock | Oldie Cover | Rare 
+ -  T'aint what you do (The Ray Ellington Quartet) | 41MPM | Swing | Oldie Cover | Standard 
+ -  Reach (S Club 7) | 42MPM | Pop | Modern | Standard 
+ -  Ain't Got No Home (Clarence Henry) | 42MPM | Rock | Oldie | Standard 
+ -  Johnny B. Goode (Cliff Richard) | 42MPM | Rock | Oldie Cover | Standard 
+ -  Choo Choo Ch'boogie (Big Bad Voodoo Daddy) | 42MPM | Swing | Oldie Cover | Standard 
+ -  All Shook Up (Paul McCartney) | 43MPM | Rock | Oldie Cover | Standard 
+ -  Coupe de ville (Si Cranstoun) | 43MPM | Rock | Oldie Cover | Rare 
+ -  Get Over You (The Overtones) | 44MPM | Rock | Oldie | Rare 
+ -  At My Front Door (The El Dorados) | 44MPM | Rock | Oldie | Standard 
+ -  She's the most (Dick Brave & The Backbeats) | 44MPM | Rock | Oldie Cover | Rare 
+ -  Dance With Me Tonight (Derek Ryan) | 44MPM | Rock | Oldie Cover | Rare 
+ -  Tainted Love (Imelda May) | 44MPM | Rock | Oldie Cover | Standard 
+ -  Let's Get Loud (The baseballs) | 44MPM | Swing | Oldie Cover | Rare 
+ -  Only You (Captain Jack) | 47MPM | Rock | Modern | Standard 
+ -  Why Do Fools Fall In Love ? (The Overtones) | 47MPM | Rock | Oldie Cover | Standard 
+ -  MMMBop (Postmodern Jukebox) | 49MPM | Swing | Modern Cover | Rare 
+ -  Stuck on you (Meiko) | 50MPM | Pop | Modern | Rare 
+ -  Roar (Postmodern Jukebox) | 50MPM | Swing | Modern Cover | Rare 
+ -  Òtre un homme comme vous (Ben L'oncle Soul) | 51MPM | Disney | Modern Cover | Standard 
+
+*** Vecteurs ***
+
+[31 ; 5 ; 1 ; 2]
+[32 ; 5 ; 1 ; 1]
+[32 ; 1 ; 5 ; 1]
+[32 ; 1 ; 5 ; 2]
+[33 ; 5 ; 1 ; 1]
+[33 ; 1 ; 1 ; 1]
+[34 ; 5 ; 3 ; 1]
+[34 ; 2 ; 1 ; 2]
+[35 ; 1 ; 1 ; 2]
+[35 ; 2 ; 1 ; 2]
+[36 ; 1 ; 1 ; 1]
+[36 ; 2 ; 1 ; 2]
+[36 ; 2 ; 1 ; 1]
+[38 ; 4 ; 1 ; 1]
+[38 ; 4 ; 5 ; 1]
+[38 ; 2 ; 5 ; 2]
+[40 ; 3 ; 1 ; 1]
+[40 ; 5 ; 1 ; 1]
+[40 ; 1 ; 1 ; 2]
+[40 ; 2 ; 1 ; 2]
+[41 ; 2 ; 1 ; 2]
+[41 ; 2 ; 5 ; 1]
+[42 ; 5 ; 2 ; 1]
+[42 ; 1 ; 1 ; 1]
+[42 ; 2 ; 1 ; 1]
+[42 ; 2 ; 5 ; 1]
+[43 ; 2 ; 1 ; 1]
+[43 ; 2 ; 1 ; 2]
+[44 ; 1 ; 1 ; 2]
+[44 ; 1 ; 1 ; 1]
+[44 ; 2 ; 1 ; 2]
+[44 ; 2 ; 1 ; 2]
+[44 ; 2 ; 1 ; 1]
+[44 ; 2 ; 5 ; 2]
+[47 ; 5 ; 1 ; 1]
+[47 ; 2 ; 1 ; 1]
+[49 ; 4 ; 5 ; 2]
+[50 ; 5 ; 2 ; 2]
+[50 ; 4 ; 5 ; 2]
+[51 ; 4 ; 4 ; 1]
+
+
+*** Vecteurs ***
+
+[31 ; 5 ; 1 ; 2]
+[32 ; 5 ; 1 ; 1]
+[32 ; 1 ; 5 ; 1]
+[32 ; 1 ; 5 ; 2]
+[33 ; 5 ; 1 ; 1]
+[33 ; 1 ; 1 ; 1]
+[34 ; 5 ; 3 ; 1]
+[34 ; 2 ; 1 ; 2]
+[35 ; 1 ; 1 ; 2]
+[35 ; 2 ; 1 ; 2]
+[36 ; 1 ; 1 ; 1]
+[36 ; 2 ; 1 ; 2]
+[36 ; 2 ; 1 ; 1]
+[38 ; 4 ; 1 ; 1]
+[38 ; 4 ; 5 ; 1]
+[38 ; 2 ; 5 ; 2]
+[40 ; 3 ; 1 ; 1]
+[40 ; 5 ; 1 ; 1]
+[40 ; 1 ; 1 ; 2]
+[40 ; 2 ; 1 ; 2]
+[41 ; 2 ; 1 ; 2]
+[41 ; 2 ; 5 ; 1]
+[42 ; 5 ; 2 ; 1]
+[42 ; 1 ; 1 ; 1]
+[42 ; 2 ; 1 ; 1]
+[42 ; 2 ; 5 ; 1]
+[43 ; 2 ; 1 ; 1]
+[43 ; 2 ; 1 ; 2]
+[44 ; 1 ; 1 ; 2]
+[44 ; 1 ; 1 ; 1]
+[44 ; 2 ; 1 ; 2]
+[44 ; 2 ; 1 ; 2]
+[44 ; 2 ; 1 ; 1]
+[44 ; 2 ; 5 ; 2]
+[47 ; 5 ; 1 ; 1]
+[47 ; 2 ; 1 ; 1]
+[49 ; 4 ; 5 ; 2]
+[50 ; 5 ; 2 ; 2]
+[50 ; 4 ; 5 ; 2]
+[51 ; 4 ; 4 ; 1]
+
+
+*** Score d'‚loignement des vecteurs ***
+Score : 75%
+Score : 71%
+Score : 85%
+Score : 88%
+Score : 69%
+Score : 68%
+Score : 90%
+Score : 65%
+Score : 68%
+Score : 62%
+Score : 63%
+Score : 60%
+Score : 57%
+Score : 65%
+Score : 79%
+Score : 73%
+Score : 67%
+Score : 61%
+Score : 63%
+Score : 57%
+Score : 59%
+Score : 70%
+Score : 83%
+Score : 63%
+Score : 56%
+Score : 71%
+Score : 56%
+Score : 60%
+Score : 67%
+Score : 64%
+Score : 61%
+Score : 61%
+Score : 58%
+Score : 75%
+Score : 67%
+Score : 60%
+Score : 92%
+Score : 100%
+Score : 97%
+Score : 100%
+
+
+Choix du vecteur 2
+Distance vecteur suivant 3
+
+Choix du vecteur 3
+Distance vecteur suivant 3
+
+Choix du vecteur 4
+Distance vecteur suivant 2
+
+Choix du vecteur 5
+Distance vecteur suivant 2
+
+Choix du vecteur 6
+Distance vecteur suivant 3
+
+Choix du vecteur 7
+Distance vecteur suivant 2
+
+Choix du vecteur 8
+Distance vecteur suivant 2
+
+Choix du vecteur 9
+Distance vecteur suivant 1
+
+Choix du vecteur 10
+Distance vecteur suivant 3
+
+Choix du vecteur 11
+Distance vecteur suivant 2
+
+Choix du vecteur 12
+Distance vecteur suivant 3
+
+Choix du vecteur 13
+Distance vecteur suivant 2
+
+Choix du vecteur 14
+Distance vecteur suivant 2
+
+Choix du vecteur 15
+Distance vecteur suivant 1
+
+Choix du vecteur 16
+Distance vecteur suivant 2
+
+Choix du vecteur 17
+Distance vecteur suivant 4
+
+Choix du vecteur 18
+Distance vecteur suivant 2
+
+Choix du vecteur 19
+Distance vecteur suivant 1
+
+Choix du vecteur 20
+Distance vecteur suivant 4
+
+Choix du vecteur 21
+Distance vecteur suivant 1
+
+Choix du vecteur 22
+Distance vecteur suivant 1
+
+Choix du vecteur 23
+Distance vecteur suivant 3
+
+Choix du vecteur 24
+Distance vecteur suivant 3
+
+Choix du vecteur 25
+Distance vecteur suivant 4
+
+Choix du vecteur 26
+Distance vecteur suivant 2
+
+Choix du vecteur 27
+Distance vecteur suivant 3
+
+Choix du vecteur 28
+Distance vecteur suivant 3
+
+Choix du vecteur 29
+Distance vecteur suivant 1
+
+Choix du vecteur 30
+Distance vecteur suivant 3
+
+Choix du vecteur 31
+Distance vecteur suivant 2
+
+Choix du vecteur 32
+Distance vecteur suivant 3
+
+Choix du vecteur 33
+Distance vecteur suivant 3
+
+Choix du vecteur 34
+Distance vecteur suivant 3
+
+Choix du vecteur 35
+Distance vecteur suivant 3
+
+Choix du vecteur 36
+Distance vecteur suivant 2
+
+Choix du vecteur 37
+Distance vecteur suivant 2
+
+Choix du vecteur 38
+Distance vecteur suivant 2
+
+Choix du vecteur 39
+Distance vecteur suivant 4
+
+Choix du vecteur 40
+Distance vecteur suivant 2
+
+*** Vecteurs ***
+
+[31 ; 5 ; 1 ; 2]
+[32 ; 5 ; 1 ; 1]
+[32 ; 1 ; 5 ; 1]
+[32 ; 1 ; 5 ; 2]
+[33 ; 5 ; 1 ; 1]
+[33 ; 1 ; 1 ; 1]
+[34 ; 5 ; 3 ; 1]
+[34 ; 2 ; 1 ; 2]
+[35 ; 1 ; 1 ; 2]
+[35 ; 2 ; 1 ; 2]
+[36 ; 1 ; 1 ; 1]
+[36 ; 2 ; 1 ; 2]
+[36 ; 2 ; 1 ; 1]
+[38 ; 4 ; 1 ; 1]
+[38 ; 4 ; 5 ; 1]
+[38 ; 2 ; 5 ; 2]
+[40 ; 3 ; 1 ; 1]
+[40 ; 5 ; 1 ; 1]
+[40 ; 1 ; 1 ; 2]
+[40 ; 2 ; 1 ; 2]
+[41 ; 2 ; 1 ; 2]
+[41 ; 2 ; 5 ; 1]
+[42 ; 5 ; 2 ; 1]
+[42 ; 1 ; 1 ; 1]
+[42 ; 2 ; 1 ; 1]
+[42 ; 2 ; 5 ; 1]
+[43 ; 2 ; 1 ; 1]
+[43 ; 2 ; 1 ; 2]
+[44 ; 1 ; 1 ; 2]
+[44 ; 1 ; 1 ; 1]
+[44 ; 2 ; 1 ; 2]
+[44 ; 2 ; 1 ; 2]
+[44 ; 2 ; 1 ; 1]
+[44 ; 2 ; 5 ; 2]
+[47 ; 5 ; 1 ; 1]
+[47 ; 2 ; 1 ; 1]
+[49 ; 4 ; 5 ; 2]
+[50 ; 5 ; 2 ; 2]
+[50 ; 4 ; 5 ; 2]
+[51 ; 4 ; 4 ; 1]
+
+
+*** Matrice de similarit‚ ***
+
+ 0  1  3  2  1  2  2  1  1  1  2  1  2  3  4  3  3  2  2  2  2  4  3  3  3  4  3  2  2  3  2  2  3  3  2  3  3  2  3  4 
+ 1  0  2  3  0  1  1  2  2  2  1  2  1  2  3  4  2  1  3  3  3  3  2  2  2  3  2  3  3  2  3  3  2  4  1  2  4  3  4  3 
+ 3  2  0  1  2  1  2  3  2  3  1  3  2  3  2  3  3  3  3  4  4  2  3  2  3  2  3  4  3  2  4  4  3  3  3  3  3  4  3  3 
+ 2  3  1  0  3  2  3  2  1  2  2  2  3  4  3  2  4  4  2  3  3  3  4  3  4  3  4  3  2  3  3  3  4  2  4  4  2  3  2  4 
+ 1  0  2  3  0  1  1  2  2  2  1  2  1  1  2  3  2  1  3  3  3  3  2  2  2  3  2  3  3  2  3  3  2  4  1  2  4  3  4  3 
+ 2  1  1  2  1  0  2  2  1  2  0  2  1  1  2  3  2  2  2  3  3  3  3  1  2  3  2  3  2  1  3  3  2  4  2  2  4  4  4  3 
+ 2  1  2  3  1  2  0  3  3  3  2  3  2  2  2  3  3  2  4  4  4  3  2  3  3  3  3  4  4  3  4  4  3  4  2  3  4  3  4  3 
+ 1  2  3  2  2  2  3  0  1  0  2  0  1  2  3  1  3  3  2  1  1  3  4  3  2  3  2  1  2  3  1  1  2  2  3  2  3  3  3  4 
+ 1  2  2  1  2  1  3  1  0  1  1  1  2  2  3  2  2  2  0  1  2  4  4  2  3  4  3  2  1  2  2  2  3  3  3  3  3  3  3  4 
+ 1  2  3  2  2  2  3  0  1  0  2  0  1  2  3  1  2  2  1  0  1  3  4  3  2  3  2  1  2  3  1  1  2  2  3  2  3  3  3  4 
+ 2  1  1  2  1  0  2  2  1  2  0  2  1  1  2  3  1  1  1  2  2  2  3  1  2  3  2  3  2  1  3  3  2  4  2  2  4  4  4  3 
+ 1  2  3  2  2  2  3  0  1  0  2  0  1  2  3  1  2  2  1  0  0  2  4  3  2  3  2  1  2  3  1  1  2  2  3  2  3  3  3  4 
+ 2  1  2  3  1  1  2  1  2  1  1  1  0  1  2  2  1  1  2  1  1  1  3  2  1  2  1  2  3  2  2  2  1  3  2  1  4  4  4  3 
+ 3  2  3  4  1  1  2  2  2  2  1  2  1  0  1  3  1  1  2  2  2  2  2  1  1  2  1  2  3  2  3  3  2  4  2  2  3  4  3  2 
+ 4  3  2  3  2  2  2  3  3  3  2  3  2  1  0  2  2  2  3  3  3  1  2  2  2  1  2  3  4  3  4  4  3  3  3  3  2  4  2  2 
+ 3  4  3  2  3  3  3  1  2  1  3  1  2  3  2  0  3  3  2  1  1  1  3  3  2  1  2  1  3  4  2  2  3  1  4  3  2  3  2  4 
+ 3  2  3  4  2  2  3  3  2  2  1  2  1  1  2  3  0  1  2  2  2  2  2  1  1  2  1  2  2  1  2  2  1  3  2  2  4  4  4  3 
+ 2  1  3  4  1  2  2  3  2  2  1  2  1  1  2  3  1  0  2  2  2  2  1  1  1  2  1  2  2  1  2  2  1  3  1  2  4  3  4  3 
+ 2  3  3  2  3  2  4  2  0  1  1  1  2  2  3  2  2  2  0  1  1  3  3  1  2  3  2  1  0  1  1  1  2  2  3  3  3  3  3  4 
+ 2  3  4  3  3  3  4  1  1  0  2  0  1  2  3  1  2  2  1  0  0  2  3  2  1  2  1  0  1  2  0  0  1  1  3  2  3  3  3  4 
+ 2  3  4  3  3  3  4  1  2  1  2  0  1  2  3  1  2  2  1  0  0  2  3  2  1  2  1  0  1  2  0  0  1  1  3  2  3  3  3  4 
+ 4  3  2  3  3  3  3  3  4  3  2  2  1  2  1  1  2  2  3  2  2  0  2  2  1  0  1  2  3  2  2  2  1  1  3  2  3  4  3  3 
+ 3  2  3  4  2  3  2  4  4  4  3  4  3  2  2  3  2  1  3  3  3  2  0  2  2  2  2  3  3  2  3  3  2  3  1  2  4  2  4  3 
+ 3  2  2  3  2  1  3  3  2  3  1  3  2  1  2  3  1  1  1  2  2  2  2  0  1  2  1  2  1  0  2  2  1  3  1  1  4  4  4  3 
+ 3  2  3  4  2  2  3  2  3  2  2  2  1  1  2  2  1  1  2  1  1  1  2  1  0  1  0  1  2  1  1  1  0  2  1  0  4  4  4  3 
+ 4  3  2  3  3  3  3  3  4  3  3  3  2  2  1  1  2  2  3  2  2  0  2  2  1  0  1  2  3  2  2  2  1  1  2  1  3  4  3  3 
+ 3  2  3  4  2  2  3  2  3  2  2  2  1  1  2  2  1  1  2  1  1  1  2  1  0  1  0  1  2  1  1  1  0  2  1  0  4  4  4  3 
+ 2  3  4  3  3  3  4  1  2  1  3  1  2  2  3  1  2  2  1  0  0  2  3  2  1  2  1  0  1  2  0  0  1  1  2  1  3  3  3  4 
+ 2  3  3  2  3  2  4  2  1  2  2  2  3  3  4  3  2  2  0  1  1  3  3  1  2  3  2  1  0  1  1  1  2  2  2  2  2  3  3  4 
+ 3  2  2  3  2  1  3  3  2  3  1  3  2  2  3  4  1  1  1  2  2  2  2  0  1  2  1  2  1  0  2  2  1  3  1  1  3  4  4  3 
+ 2  3  4  3  3  3  4  1  2  1  3  1  2  3  4  2  2  2  1  0  0  2  3  2  1  2  1  0  1  2  0  0  1  1  2  1  2  3  3  4 
+ 2  3  4  3  3  3  4  1  2  1  3  1  2  3  4  2  2  2  1  0  0  2  3  2  1  2  1  0  1  2  0  0  1  1  2  1  2  3  3  4 
+ 3  2  3  4  2  2  3  2  3  2  2  2  1  2  3  3  1  1  2  1  1  1  2  1  0  1  0  1  2  1  1  1  0  2  1  0  3  4  4  3 
+ 3  4  3  2  4  4  4  2  3  2  4  2  3  4  3  1  3  3  2  1  1  1  3  3  2  1  2  1  2  3  1  1  2  0  3  2  1  3  2  4 
+ 2  1  3  4  1  2  2  3  3  3  2  3  2  2  3  4  2  1  3  3  3  3  1  1  1  2  1  2  2  1  2  2  1  3  0  1  3  2  3  2 
+ 3  2  3  4  2  2  3  2  3  2  2  2  1  2  3  3  2  2  3  2  2  2  2  1  0  1  0  1  2  1  1  1  0  2  1  0  3  3  3  2 
+ 3  4  3  2  4  4  4  3  3  3  4  3  4  3  2  2  4  4  3  3  3  3  4  4  4  3  4  3  2  3  2  2  3  1  3  3  0  2  0  2 
+ 2  3  4  3  3  4  3  3  3  3  4  3  4  4  4  3  4  3  3  3  3  4  2  4  4  4  4  3  3  4  3  3  4  3  2  3  2  0  2  3 
+ 3  4  3  2  4  4  4  3  3  3  4  3  4  3  2  2  4  4  3  3  3  3  4  4  4  3  4  3  3  4  3  3  4  2  3  3  0  2  0  2 
+ 4  3  3  4  3  3  3  4  4  4  3  4  3  2  2  4  3  3  4  4  4  3  3  3  3  3  3  4  4  3  4  4  3  4  2  2  2  3  2  0 
+
+
+
+Score : 64%

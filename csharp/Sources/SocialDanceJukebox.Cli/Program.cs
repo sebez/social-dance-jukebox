@@ -32,7 +32,7 @@ namespace SocialDanceJukebox.Cli
             var jukebox = new Jukebox(
                 new PreparateurSansEffet(),
                 new MatriceSimilariteCalculateur(distance),
-                new TrieurSimilarite(distance, new SelecteurMeilleurCandidat()),
+                new TrieurSimilarite(distance, new SelecteurMoinsDeVoisinsProchePlusDistant()),
                 new ScoreCalculeur(distance));
             jukebox.AutoDj(playlist);
 

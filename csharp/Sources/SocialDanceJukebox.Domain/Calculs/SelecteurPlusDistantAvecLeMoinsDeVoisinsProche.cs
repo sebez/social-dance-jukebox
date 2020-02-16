@@ -9,7 +9,7 @@ namespace SocialDanceJukebox.Domain.Calculs
     /// <summary>
     /// Sélectionne le meilleur candidat en optimisant la distance avec les vecteurs restants.
     /// </summary>
-    public class SelecteurMeilleurCandidat : IProchainVecteurSelecteur
+    public class SelecteurPlusDistantAvecLeMoinsDeVoisinsProche : IProchainVecteurSelecteur
     {
         public VecteurChanson Selectionne(VecteurChanson vecteurPrecedent, List<VecteurChanson> vecteursRestant, CalculData data)
         {
