@@ -8,7 +8,7 @@ Dans le cadre d'un bal rock, concevoir une playlist avec les critères suivants 
 
   * Chansons durant entre 2min et 4min
   * Playlist de 2h au total (donc environ 40 chansons)  
-  * Chansons de tempo entre 30 et 50 MPM
+  * Chansons de tempo entre 30 et 50 MPM (Mesures par Minutes = Battements par minute / 4)
   * Chansons "dansables en rock" (tempo bien marqué, ambiance joviale, présence de break...)
   * Bonne répartition en terme de tempo : gaussienne centrée sur 40 MPM
   * Bonne répartition en terme de genre : Rock / Swing / Pop ...
@@ -30,7 +30,7 @@ Dans le cadre d'un bal rock, concevoir une playlist avec les critères suivants 
  On se retrouve dans un problème d'optimisation de score nécessaitant l'intervention héroïque de la data science. #turfu
    
  Cas particuliers :
-   * les 5 premières chansons doivent être lentes et simples (tempo bien marqué), car elles seront dansées par les débutants du cours débutants qui précédent le bal rock.     
+   * les 5 premières chansons doivent être lentes et simples (tempo bien marqué), car elles seront dansées par les débutants du cours débutants qui précéde le bal rock.     
    * la dernière chanson doit être un tube mainstream (pour finir le bal dans une zone de confort)
    
 ## Set de travail
@@ -41,7 +41,7 @@ On se base sur un fichier Excel annoté avec des étiquettes pour les différent
 
 ## Définition de la distance
 
-On utilise une [distance "binaire"](https://github.com/sebez/social-dance-jukebox/blob/master/csharp/Sources/SocialDanceJukebox.Domain/Calculs/DistanceBinaire.cs) qui fait la somme de la distance pour chaque coordonnées, avec une valeur 1 si la coordonnée est différente et 0 sinon.
+On utilise une [distance "binaire"](https://github.com/sebez/social-dance-jukebox/blob/master/csharp/Sources/SocialDanceJukebox.Domain/Calculs/DistanceBinaire.cs) qui fait la somme de la distance pour chaque coordonnée, avec une valeur 1 si la coordonnée est différente et 0 sinon.
 
 Exception pour le tempo : distance de 1 si le delta est supérieur à 5MPM, 0 sinon.
 
