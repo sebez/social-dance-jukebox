@@ -27,7 +27,7 @@ Dans le cadre d'un bal rock, concevoir une playlist avec les critères suivants 
  
  L'alternance du tempo est prioritaire sur les autres.
  
- On se retrouve dans un problème d'optimisation de score nécessaitant l'intervention héroïque de la data science. #turfu
+ On se retrouve dans un problème d'optimisation de score nécessitant l'intervention héroïque de la data science. #turfu
    
  Cas particuliers :
    * les 5 premières chansons doivent être lentes et simples (tempo bien marqué), car elles seront dansées par les débutants du cours débutants qui précéde le bal rock.     
